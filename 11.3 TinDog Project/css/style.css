@@ -7,6 +7,16 @@
   
 }
 
+#footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+.footer-container{
+  display: grid;
+  justify-content: space-evenly;
+}
 .grid-container{
   display: grid;
   grid-template-rows: 80vh 20vh;
@@ -39,6 +49,49 @@
   justify-content: center;
   align-items: center;
 }
+
+.review-photos img{
+  height: 30px;
+}
+
+#testimonial div .dog{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.review-photos{
+  display: flex;
+  gap: 150px;
+}
+
+#testimonial h2{
+  font-size: calc(1.325rem + .9vw);
+}
+#testimonial p{
+  font-size:  1.25rem;
+  margin-bottom: 50px;
+}
+
+#testimonial .testimonial-layout{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#testimonial{
+  background-color: #f8f9fa;
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  padding: 3rem;
+}
+
 @keyframes gradient-animation {
   0% {
     background-position: 0% 50%;
@@ -49,6 +102,8 @@
   100% {
     background-position: 0% 50%;
   }
+
+
 }
 
 .icon-square {
@@ -60,4 +115,16 @@
 .profile-img {
   height: 100px;
   border-radius: 50%;
+}
+
+
+@media (min-width: 992px){
+  #title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+  }
+
+
 }
